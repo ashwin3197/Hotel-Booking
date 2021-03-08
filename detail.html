@@ -5,62 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
-    <link href="detail.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div>
-        <header>
-            <div id="logo-container">
-               <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\index.html"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\logo.png" width="200px" height="150px" /></a>
-                <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\login.html">login</a> 
+        <div class="Header">
+            <a href="index.html" target="_self"><img src="assests\images\logo.png" alt="logo" width="60" height="60" id="logo">
+            </a><a href="login.html" target="_blank" id="login"><button type="button" class="btn btn-light">LOGIN</button></a>
         </div>
-    </header>
-        <div class="content">
-           <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-           <br>
-           <form action="index.html">
-           <label for="Adults">Adults:</label>
-           <input type="number" id="adults" name="adults" min="1" required ><br>
-           <label for="Name">Name:</label>
-           <input type="text" id="name" name="name">
-           <br>
-           <label for="date">From Date:</label>
-           <input type="date" ><br>
-         
-           <label for="date">To Date:</label>
-           <input type="date"><br>
-            <label>Total:</label>
-            <input type="number" disabled>
-            <br>
-            <button formaction="index.html">Book Now</button>
-        </form>
-           <p>Radisson blu Hotel</p>
-           <p>Rating 5</p>
-           <p>Amenities</p>
-           <ul>
-               <li>Free breakfast</li>
-               <li>Free WiFi internet access</li>
-               <li>Free parking</li>
-               <li>Premium coffee</li>
-               <li> Gym or fitness center</li>
-           </ul>
-           <p>Discription</p>
-           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu</p>
-           
-       </div>
-    </div>
-        <footer>
-           
-            <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\contact.html">Contact Us</a>
-            <br>
-           
-           <a href="https://www.facebook.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\facebook.png" width="22px" height="20px"></a>
-           <a href="https://www.instagram.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\instagram.png" width="22px" height="20px"></a>
-           <a href="https://twitter.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\twitter.png" width="22px" height="20px"></a>
-        
-           <p>© 2021 ROOM SEARCH PVT LIMITED</p>
+        <div class="Content">
+            <div class="container">
             
-        </footer>
-  
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="image"><img class="d-block w-100" id="images1"width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="First slide">
+                  </div></div>
+                  <div class="carousel-item">
+                    <div id="image"><img class="d-block w-100" id="images2" width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="Second slide">
+                  </div></div>
+                  <div class="carousel-item">
+                    <div id="image"><img class="d-block w-100" id="images3" width="250px"
+                        height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="Third slide">
+                  </div></div>
+                </div>
+                <a class="carousel-control-prev"  href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next"  href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+            <div id="detail1"><form class="form">
+            <br/>Adult:<input type="number" placeholder="1" min="1" required>
+            <br/>Name:<input type="text"   required>
+            <br/>From date:<input type="date" id="date1" required>
+            <br/>To date:<input type="date" id="date2" required>
+            <br/>Total:<input type="number" readonly >
+            <br><input type="submit" value = "Book Now" id="Book now" type="button" class="btn btn-outline-success" formaction="payment.html">
+            </form></div></div>
+            <p><strong>Radisson Blu Hotel</strong></p>
+            <p>RATING</p>
+            <p><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></p>
+            <p>AMENITIES</p>
+            <ul>
+                <li>Room Service</li>
+                <li>Resturant</li>
+                <li>Bussiness Center</li>
+                <li>Fitness Center</li>
+                <li>Pool</li>
+            </ul>
+            <p>DESCRIPTION</p>
+            <p>Radisson Blu is an international chain of hotels operated by Radisson Hotels.</p>
+        </div>
+        </div>    
+        <div class ="Footer">
+            <a href="contact.html" target="_blank"id="contact" ><button type="button" class="btn btn-primary">Contact Us</button></a>
+            <div class=" socialmedialogo">
+        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" width="22" height="20"class="social"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" width="22" height="20"class="social"></a>
+        <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" width="22" height="20" class="social"></a></div>
+        <div id="room"> 
+        <br>&#169 2020 ROOM SEARCH PVT. LTD
+        </div>
+        </div>
+        </div>
 </body>
 </html>

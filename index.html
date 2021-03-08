@@ -5,37 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div>
-    <header>
-        <div id="logo-container">
-       
-            <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\logo.png" width="200px" height="150px" />
-            <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\login.html">login</a> 
+    <div class="Header">
+       <span id="mylogo"><img src="assests\images\logo.png" alt="logo" width="120" height="120" id="logo"></span>
+       <a href="login.html" target="_self" id="login"><button type="button" class="btn btn-light">LOGIN</button></a>
     </div>
-        <br>
-        <input type="text" placeholder="City">
-    </header> 
-    <div class="content">
-        
-        <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width="300px" height="300px"></a>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg " width="300px" height="300px">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg " width="300px" height="300px">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" width="300px" height="300px">
-        <br>
-        <a href="">View more ->></a>
+    
+        <div id="searchbar"><input type="text" placeholder="City"id="search"></div>
+        <div class="Content">
+        <div class="cityimages">
+            <div class="container">
+                <div class="container1">
+                    <span ><a href="list.html" target="_self"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" width ="300" height = "300" class="images" class="image1"  id="images 1"></span>
+                    <div class="overlay1">Delhi</div></div></a>
+                    <div class="container2">
+                    <span ><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" width ="300" height = "300" class="images"class="image2"  id="images 2"></span>
+                    <div class="overlay2">Goa</div></div>
+                    <div class="container3">
+                    <span ><img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" width ="300" height = "300" class="images"class="image3"id="images 3"></span>
+                    <div class="overlay3">Hyderabad</div></div>
+                    <div class="container4">
+                    <span ><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"width ="300" height = "300" class="images"class="image4"id="images 4"></span>
+                    <div class="overlay4">Kolkata</div></div>
+            </div></div></div>
+        <div id="viewmore"><a href="index.html"><button type="button" class="btn btn-secondary">View more>></button></a></div>
+    </div>    
+    <div class ="Footer">
+        <a href="contact.html" target="_self" id="contact"><button type="button" class="btn btn-primary">Contact Us</button></a>
+        <div class=" socialmedialogo">
+        <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" width="22" height="20" class="social"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" width="22" height="20" class="social"></a>
+        <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" width="22" height="20" class="social"></a></div>
+    <div id="room">
+        <br>&#169 2020 ROOM SEARCH PVT. LTD
     </div>
-    <footer>
-      
-       <a href="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\contact.html">Contact Us</a>
-       <br>
-      <a href="https://www.facebook.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\facebook.png" width="22px" height="20px"></a>
-      <a href="https://www.instagram.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\instagram.png" width="22px" height="20px"></a>
-      <a href="https://twitter.com"> <img src="C:\Users\ASHWIN\OneDrive\Desktop\hotel booking\assests\images\twitter.png" width="22px" height="20px"></a>
-        <p>© 2021 ROOM SEARCH PVT LIMITED</p>
-    </footer>
-</div>
+    </div>
+    </div>
+    
 </body>
 </html>
